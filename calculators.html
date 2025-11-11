@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculated Car Audio Creations | RMS Calculator</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <div id="page-wrapper">
+    <header class="site-header">
+      <div class="logo-area">
+        <img src="images/logo.png" alt="Calculated Car Audio Creations logo" class="logo">
+        <div class="site-title">
+          <h1>Calculated Car Audio Creations</h1>
+          <p class="tagline">Design. Calculate. Create.</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="calculators.html" class="active">RMS Calculator</a></li>
+          <li><a href="sound-deadening.html">Sound Deadening</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>RMS Voltage Calculator</h2>
+      <p>Estimate the target AC voltage for your amplifier when setting gains with a 40hz test tone.</p>
+      <p>Formula for Voltage = √(Power x Ohms)</p>
+
+      <label for="power">Amplifier Power (watts):</label><br>
+      <input type="number" id="power" min="1" step="1"><br><br>
+
+      <label for="ohms">Speaker Impedance (ohms):</label><br>
+      <input type="number" id="ohms" min="0.1" step="0.1"><br><br>
+
+      <button id="calc-rms" class="btn">Calculate Voltage</button>
+      <p id="rms-result"></p>
+
+      <img src="images/rms.png" alt="rms calculator page photo">
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Calculated Car Audio Creations</p>
+    </footer>
+  </div>
+</body>
+</html>
