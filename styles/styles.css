@@ -35,11 +35,10 @@ body {
 }
 
 .logo {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
+  max-width: 30px;
+  height: auto;
 }
+
 
 .site-title h1 {
   font-size: 1.1rem;

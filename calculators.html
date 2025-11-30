@@ -9,24 +9,7 @@
 </head>
 <body>
   <div id="page-wrapper">
-    <header class="site-header">
-      <div class="logo-area">
-        <img src="images/logo.png" alt="Calculated Car Audio Creations logo" class="logo">
-        <div class="site-title">
-          <h1>Calculated Car Audio Creations</h1>
-          <p class="tagline">Design. Calculate. Create.</p>
-        </div>
-      </div>
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="calculators.html" class="active">RMS Calculator</a></li>
-          <li><a href="sound-deadening.html">Sound Deadening</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+     
 
     <main>
       <h2>RMS Voltage Calculator</h2>
@@ -43,11 +26,25 @@
       <p id="rms-result"></p>
 
       <img src="images/rms.png" alt="rms calculator page photo">
-    </main>
 
-    <footer class="site-footer">
-      <p>&copy; 2025 Calculated Car Audio Creations</p>
-    </footer>
+      <hr>
+
+      <h2>Subwoofer Box Volume Calculator</h2>
+      <p>Calculate the internal airspace of a simple rectangular subwoofer enclosure.</p>
+
+      <label for="box-width">Width (inches):</label><br>
+      <input type="number" id="box-width" min="0.1" step="0.1"><br><br>
+
+      <label for="box-height">Height (inches):</label><br>
+      <input type="number" id="box-height" min="0.1" step="0.1"><br><br>
+
+      <label for="box-depth">Depth (inches):</label><br>
+      <input type="number" id="box-depth" min="0.1" step="0.1"><br><br>
+
+      <button id="calc-box" class="btn">Calculate Box Volume</button>
+      <p id="box-result"></p>
+    </main>
+ 
   </div>
 </body>
 </html>
