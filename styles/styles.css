@@ -39,8 +39,7 @@ body {
   height: auto;
 }
 
-
-.site-title h1 {
+.site-title-heading {
   font-size: 1.1rem;
 }
 
@@ -72,8 +71,8 @@ body {
   border-radius: 4px;
 }
 
-.site-nav a:hover,
-.site-nav a.active {
+.site-nav .active,
+.site-nav a:hover {
   background-color: #fff;
   color: #222;
 }
@@ -87,11 +86,13 @@ main {
   border-radius: 4px;
 }
 
-main h2, main h3 {
+.content-heading,
+.content-subheading {
   margin-bottom: 0.5rem;
 }
 
-main p, main ul {
+main p,
+main ul {
   margin-bottom: 1rem;
 }
 
@@ -138,7 +139,7 @@ ul {
     margin-top: 0.5rem;
   }
 
-  .site-nav.open ul {
+  .site-nav-open ul {
     display: flex;
   }
 }
